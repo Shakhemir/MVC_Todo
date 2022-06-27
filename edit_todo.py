@@ -4,7 +4,7 @@ import user_interface as ui
 
 def edit_todo(todo_list):
     edit_id = ui.select_todo(todo_list, 'для изменения')
-    if edit_id:
+    if edit_id is not None:
         print(f'Введите новые значения для дела (пустая строка, чтобы оставить как есть):')
         for i, edit_field in enumerate(todo_list[edit_id][:-1]):
             print(f'{fields[i][0]} ({edit_field}):')

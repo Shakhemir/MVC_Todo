@@ -32,7 +32,7 @@ def select_todo(todo_list, for_what=''):
     while not select_todo_id.isdigit() or int(select_todo_id) not in range(max_id):
         select_todo_id = input(f'Выберите N дела {for_what} (пустая строка - отмена): ')
         if select_todo_id == '':
-            return False
+            return
     return int(select_todo_id)
 
 

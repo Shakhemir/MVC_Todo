@@ -4,7 +4,7 @@ import user_interface as ui
 
 def new_status(todo_list):
     change_id = ui.select_todo(todo_list, 'для изменения статуса или удаления')
-    if change_id:
+    if change_id is not None:
         ui.show_menu_commands(menu_edit_status, light=True)
         select_command = ui.select_menu()
         if select_command.isdigit():
