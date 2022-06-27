@@ -39,3 +39,7 @@ def select_todo(todo_list, for_what=''):
 def confirm_input(text=''):
     answer = input(f'{text} (для подтверждения введите "да"/"yes"/"y")?')
     return answer.lower() in ('да', 'yes', 'y')
+
+
+def my_print(*args):
+    print(*args)
